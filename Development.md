@@ -38,6 +38,19 @@
     $ cd 
     $ npm run start:dev
 
+<br/>
+
+### 010. Introduction to NestJS Modules
+
+<br/>
+
+### 011. Creating a Tasks Module
+
+    $ cd app/api/nestjs-task-management
+    $ nest g module tasks
+
+    $ npm run start:dev
+
 ---
 
 <br/>
