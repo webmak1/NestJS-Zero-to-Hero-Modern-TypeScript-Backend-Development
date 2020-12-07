@@ -33,6 +33,11 @@
     $ cd app/api
     $ nest new nestjs-task-management
 
+<br/>
+
+    $ cd 
+    $ npm run start:dev
+
 ---
 
 <br/>
