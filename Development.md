@@ -24,6 +24,8 @@
 
 ### 008. Project Overview: Task Management Application
 
+<br/>
+
 ![Application](/img/pic-m01-p01.png?raw=true)
 
 <br/>
@@ -50,6 +52,26 @@
     $ nest g module tasks
 
     $ npm run start:dev
+
+
+<br/>
+
+### 12. Introduction to NestJS Controllers
+
+<br/>
+
+![Application](/img/pic-m01-p02.png?raw=true)
+
+<br/>
+
+### 13. Creating a Tasks Controller
+
+    $ cd app/api/nestjs-task-management
+    $ nest g controller tasks --no-spec
+
+
+<br/>
+
 
 ---
 
