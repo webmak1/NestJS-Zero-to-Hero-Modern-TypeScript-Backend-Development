@@ -72,6 +72,24 @@
 
 <br/>
 
+### 14. Introduction to NestJS Providers and Services
+
+
+<br/>
+
+![Application](/img/pic-m01-p03.png?raw=true)
+
+
+<br/>
+
+### 15. Creating a Tasks Service
+
+    $ cd app/api/nestjs-task-management
+    $ nest g service tasks --no-spec
+
+
+
+<br/>
 
 ---
 
