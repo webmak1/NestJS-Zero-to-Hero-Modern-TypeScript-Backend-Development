@@ -87,7 +87,14 @@
     $ cd app/api/nestjs-task-management
     $ nest g service tasks --no-spec
 
+<br/>
 
+### 16. Feature: Getting all Tasks
+
+
+    $ npm run start:dev
+
+### 17. Defining a Task Model
 
 <br/>
 
