@@ -94,7 +94,40 @@
 
     $ npm run start:dev
 
+<br/>
+
 ### 17. Defining a Task Model
+
+<br/>
+
+### 18-19. Feature Creating a Task
+
+    $ npm install --save uuid
+
+
+```
+$ curl -d '{
+    "title": "title",
+    "description": "description"
+}' \
+-H "Content-Type: application/json" \
+-X POST localhost:3000/tasks \
+| python -m json.tool
+```
+
+<br/>
+
+**Response:**
+
+```
+{
+    "description": "description",
+    "id": "ccc44240-3a79-11eb-8eba-d9eaeaaceca5",
+    "status": "OPEN",
+    "title": "title"
+}
+```
+
 
 <br/>
 
