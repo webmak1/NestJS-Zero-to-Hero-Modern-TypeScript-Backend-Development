@@ -171,6 +171,27 @@ $ curl -d '{
 }
 ```
 
+<br/>
+
+
+### 22. Feature Getting a Task by ID
+
+<br/>
+
+### 23. Challenge Deleting a Task
+
+<br/>
+
+### 24. Solution Deleting a Task
+
+<br/>
+
+### 25. Challenge Updating a Task's Status
+
+<br/>
+
+### 26. Solution Updating a Task's Status
+
 
 
 <br/>
