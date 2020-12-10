@@ -26,7 +26,7 @@
 
 <br/>
 
-![Application](/img/pic-m01-p01.png?raw=true)
+![Application](/img/pic-m02-p01.png?raw=true)
 
 <br/>
 
@@ -60,7 +60,7 @@
 
 <br/>
 
-![Application](/img/pic-m01-p02.png?raw=true)
+![Application](/img/pic-m02-p02.png?raw=true)
 
 <br/>
 
@@ -77,7 +77,7 @@
 
 <br/>
 
-![Application](/img/pic-m01-p03.png?raw=true)
+![Application](/img/pic-m02-p03.png?raw=true)
 
 
 <br/>
@@ -104,6 +104,7 @@
 
     $ npm install --save uuid
 
+<br/>
 
 ```
 $ curl -d '{
@@ -127,6 +128,49 @@ $ curl -d '{
     "title": "title"
 }
 ```
+
+
+<br/>
+
+### 20. Introduction to Data Transfer Objects (DTOs)
+
+<br/>
+
+![Application](/img/pic-m02-p04.png?raw=true)
+
+<br/>
+
+![Application](/img/pic-m02-p05.png?raw=true)
+
+<br/>
+
+### 21. Creating a CreateTaskDto
+
+<br/>
+
+```
+$ curl -d '{
+    "title": "title",
+    "description": "description"
+}' \
+-H "Content-Type: application/json" \
+-X POST localhost:3000/tasks \
+| python -m json.tool
+```
+
+<br/>
+
+**Response:**
+
+```
+{
+    "description": "description",
+    "id": "fed13960-3b27-11eb-b007-01d1c5df01ee",
+    "status": "OPEN",
+    "title": "title"
+}
+```
+
 
 
 <br/>
