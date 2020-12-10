@@ -192,7 +192,9 @@ $ curl -d '{
 
 ### 26. Solution Updating a Task's Status
 
+<br/>
 
+### 27. Feature Searching and Filtering Tasks
 
 <br/>
 
