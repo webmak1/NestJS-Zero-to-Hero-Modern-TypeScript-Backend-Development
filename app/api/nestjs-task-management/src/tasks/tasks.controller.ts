@@ -7,9 +7,12 @@ import {
   Patch,
   Post,
   Query,
+  UsePipes,
+  ValidationPipe,
 } from '@nestjs/common';
 import { CreateTaskDto } from 'src/tasks/dto/create-task.dto';
 import { GetTasksFilterDto } from 'src/tasks/dto/get-tasks-filtre.dto';
+import { TaskStatusValidationPipe } from 'src/tasks/pipes/task-status-validation.pipe';
 import { Task, TaskStatus } from 'src/tasks/tasks.model';
 import { TasksService } from 'src/tasks/tasks.service';
 
@@ -18,7 +21,7 @@ export class TasksController {
   constructor(private tasksService: TasksService) {}
 
   @Get()
-  getTasks(@Query() filterDto: GetTasksFilterDto): Task[] {
+  getTasks(@Query(ValidationPipe) filterDto: GetTasksFilterDto): Task[] {
     if (Object.keys(filterDto).length) {
       return this.tasksService.getTasksWithFilters(filterDto);
     } else {
@@ -32,6 +35,7 @@ export class TasksController {
   }
 
   @Post()
+  @UsePipes(ValidationPipe)
   createTask(@Body() createTaskDto: CreateTaskDto): Task {
     return this.tasksService.createTask(createTaskDto);
   }
@@ -44,7 +48,7 @@ export class TasksController {
   @Patch('/:id/status')
   updateTaskStatus(
     @Param('id') id: string,
-    @Body('status') status: TaskStatus,
+    @Body('status', TaskStatusValidationPipe) status: TaskStatus,
   ): Task {
     return this.tasksService.updateTaskStatus(id, status);
   }

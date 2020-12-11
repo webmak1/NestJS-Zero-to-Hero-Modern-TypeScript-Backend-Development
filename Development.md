@@ -15,7 +15,6 @@
     $ nest --version
     7.5.3
 
-
 <br/>
 
 ## 02. REST API - Task Management Application (CRUD)
@@ -37,7 +36,7 @@
 
 <br/>
 
-    $ cd 
+    $ cd
     $ npm run start:dev
 
 <br/>
@@ -52,7 +51,6 @@
     $ nest g module tasks
 
     $ npm run start:dev
-
 
 <br/>
 
@@ -69,16 +67,13 @@
     $ cd app/api/nestjs-task-management
     $ nest g controller tasks --no-spec
 
-
 <br/>
 
 ### 14. Introduction to NestJS Providers and Services
 
-
 <br/>
 
 ![Application](/img/pic-m02-p03.png?raw=true)
-
 
 <br/>
 
@@ -90,7 +85,6 @@
 <br/>
 
 ### 16. Feature: Getting all Tasks
-
 
     $ npm run start:dev
 
@@ -128,7 +122,6 @@ $ curl -d '{
     "title": "title"
 }
 ```
-
 
 <br/>
 
@@ -173,7 +166,6 @@ $ curl -d '{
 
 <br/>
 
-
 ### 22. Feature Getting a Task by ID
 
 <br/>
@@ -195,6 +187,44 @@ $ curl -d '{
 <br/>
 
 ### 27. Feature Searching and Filtering Tasks
+
+<br/>
+
+## 03. Validation and Error Handling
+
+<br/>
+
+### 29. Introduction to NestJS Pipes
+
+<br/>
+
+![Application](/img/pic-m03-p01.png?raw=true)
+
+<br/>
+
+### 30. ValidationPipe Creating a Task
+
+    $ npm install class-validator class-transformer
+
+<br/>
+
+https://github.com/typestack/class-validator#validation-decorators
+
+<br/>
+
+### 31. Error Handling Getting a non-existing Task
+
+<br/>
+
+### 32. Error Handling Deleting a non-existing Task
+
+<br/>
+
+### 33. Custom Pipe Validating the Task Status
+
+<br/>
+
+### 34. ValidationPipe Task Filtering and Search
 
 <br/>
 
