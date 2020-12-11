@@ -228,6 +228,40 @@ https://github.com/typestack/class-validator#validation-decorators
 
 <br/>
 
+## 04. Data Persistence - PostgreSQL & TypeORM
+
+<br/>
+
+### 37. Using pgAdmin to create a Database
+
+Crate database "taskmanagement"
+
+<br/>
+
+### 38. Introduction to Object Relational Mapping and TypeORM
+
+<br/>
+
+### 40. Connecting NestJS to a database using TypeORM
+
+    $ npm install --save @nestjs/typeorm typeorm pg
+
+<br/>
+
+### 41. Creating a Task Entity
+
+<br/>
+
+### 42. Creating a Task Repository
+
+<br/>
+
+### 43. Preparation for Task Service Refactoring
+
+    $ npm remove uuid
+
+<br/>
+
 ---
 
 <br/>
