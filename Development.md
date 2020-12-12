@@ -232,6 +232,10 @@ https://github.com/typestack/class-validator#validation-decorators
 
 <br/>
 
+http://typeorm.delightful.studio/classes/_repository_repository_.repository.html
+
+<br/>
+
 ### 37. Using pgAdmin to create a Database
 
 Crate database "taskmanagement"
@@ -259,6 +263,116 @@ Crate database "taskmanagement"
 ### 43. Preparation for Task Service Refactoring
 
     $ npm remove uuid
+
+<br/>
+
+### 44. Persistence Getting a Task by ID
+
+<br/>
+
+### 45. Persistence Creating a Task
+
+<br/>
+
+```
+$ curl -d '{
+    "title": "title1",
+    "description": "description1"
+}' \
+-H "Content-Type: application/json" \
+-X POST localhost:3000/tasks \
+| python -m json.tool
+```
+
+```
+$ curl -d '{
+    "title": "title2",
+    "description": "description2"
+}' \
+-H "Content-Type: application/json" \
+-X POST localhost:3000/tasks \
+| python -m json.tool
+```
+
+```
+$ curl -d '{
+    "title": "title3",
+    "description": "description3"
+}' \
+-H "Content-Type: application/json" \
+-X POST localhost:3000/tasks \
+| python -m json.tool
+```
+
+```
+$ curl -d '{
+    "title": "title4",
+    "description": "description4"
+}' \
+-H "Content-Type: application/json" \
+-X POST localhost:3000/tasks \
+| python -m json.tool
+```
+
+<br/>
+
+### 46. Challenge Delete Task Persistence
+
+<br/>
+
+### 47. Solution Delete Task Persistence
+
+<br/>
+
+### 48. Persistence Updating Task Status
+
+<br/>
+
+### 49. IMPORTANT Before Persistence of Getting Tasks
+
+<br/>
+
+### 50. Persistence Getting Tasks (with or without filters)
+
+```
+$ curl \
+-H "Content-Type: application/json" \
+-X GET localhost:3000/tasks \
+| python -m json.tool
+```
+
+<br/>
+
+```
+$ curl \
+-H "Content-Type: application/json" \
+-X GET localhost:3000/tasks?status=OPEN \
+| python -m json.tool
+```
+
+<br/>
+
+```
+$ curl \
+-H "Content-Type: application/json" \
+-X GET 'localhost:3000/tasks?status=OPEN&search=title4' \
+| python -m json.tool
+```
+
+<br/>
+
+**Returns:**
+
+```
+[
+    {
+        "description": "description4",
+        "id": 4,
+        "status": "OPEN",
+        "title": "title4"
+    }
+]
+```
 
 <br/>
 
